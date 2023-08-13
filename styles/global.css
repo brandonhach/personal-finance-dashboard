@@ -7,3 +7,7 @@
 :root {
 	/* Colors */
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
