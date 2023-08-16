@@ -4,15 +4,15 @@ import { FaArrowDown } from "react-icons/fa";
 const Landing = () => {
 	return (
 		<>
-			<div className="container flex flex-col items-center justify-center h-screen overflow-hidden w-full -z-0">
+			<div className="flex flex-col items-center justify-center h-screen w-full overflow-hidden">
 				<video
-					className="absolute z-10 w-auto min-w-full min-h-1/2 "
+					className="absolute z-10 w-screen min-h-1/2 overflow-hidden"
 					autoPlay={true}
 					loop
 					muted>
 					<source src="Video/black abstract.mp4" />
 				</video>
-				<div className="container flex flex-col items-center justify-center">
+				<div className="flex flex-col items-center justify-center">
 					<h1
 						className="z-30 p-5 text-white bg-opacity-50 rounded-xl shadow-md text-7xl
 					">
