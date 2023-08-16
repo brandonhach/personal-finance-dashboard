@@ -1,21 +1,33 @@
 import React from "react";
+import { FaArrowDown } from "react-icons/fa";
 
 const Landing = () => {
 	return (
 		<>
-			<div className="container flex flex-col items-center justify-center bg-black w-auto h-screen">
-				<div className="container flex flex-col items-center text-white text-left text-5xl font-semibold w-1/2 gap-5">
-					<h3 className="container ">
-						Understand your customers by viewing the metric of your company.
-					</h3>
-					<h3 className="container">Maintain and track your expenses and profits.</h3>
-					<h3 className="container">Predict your performance through our dashboard.</h3>
+			<div className="container flex flex-col items-center justify-center h-screen overflow-hidden w-full -z-0">
+				<video
+					className="absolute z-10 w-auto min-w-full min-h-1/2 "
+					autoPlay={true}
+					loop
+					muted>
+					<source src="Video/black abstract.mp4" />
+				</video>
+				<div className="container flex flex-col items-center justify-center">
+					<h1
+						className="z-30 p-5 text-white bg-opacity-50 rounded-xl shadow-md text-7xl
+					">
+						HachView
+					</h1>
+					<h2
+						className="z-30 p-5 text-2xl text-white bg-opacity-50 rounded-xl shadow-md text-center
+						
+					">
+						Use machine learning to predict your future financial forecast.
+					</h2>
 				</div>
-				<div></div>
-			</div>
-			<div className="container flex flex-col items-center justify-center h-screen ">
-				<div></div>
-				<div></div>
+				<div className="absolute z-30 text-white text-4xl bottom-5 ">
+					<FaArrowDown></FaArrowDown>
+				</div>
 			</div>
 		</>
 	);
